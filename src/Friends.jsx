@@ -1,4 +1,5 @@
 import { use } from "react";
+import Friend from "./Friend";
 
 export default function Friends({friendsPromise}) {
 
@@ -8,6 +9,9 @@ export default function Friends({friendsPromise}) {
     return(
         <div>
             <h1 className="card">Friends {friends.length}</h1>
+            {
+                friends.map(friend => <Friend key={friend.id} friend = {friend}></Friend>)
+            }
         </div>
     )
 }
