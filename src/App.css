@@ -188,3 +188,10 @@
   padding: 20px;
   width: 120px;
 }
+
+.card {
+  border: 2px solid gold;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
